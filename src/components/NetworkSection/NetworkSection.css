@@ -1,0 +1,113 @@
+.network-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.network-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #20b2aa;
+  text-align: center;
+  margin: 0 0 3rem 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.network-map {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map-placeholder {
+  width: 100%;
+  aspect-ratio: 2/1;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-pin {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #2d8659;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.map-pin::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.pin-1 {
+  top: 45%;
+  left: 25%;
+}
+
+.pin-2 {
+  top: 50%;
+  left: 30%;
+}
+
+.pin-3 {
+  top: 55%;
+  left: 28%;
+}
+
+.pin-4 {
+  top: 20%;
+  left: 50%;
+}
+
+.pin-5 {
+  top: 25%;
+  left: 48%;
+}
+
+.pin-6 {
+  top: 30%;
+  left: 52%;
+}
+
+.pin-7 {
+  top: 35%;
+  left: 50%;
+}
+
+.pin-8 {
+  top: 40%;
+  left: 70%;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .network-section {
+    padding: 4rem 0;
+  }
+
+  .network-title {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .map-pin {
+    width: 16px;
+    height: 16px;
+  }
+
+  .map-pin::after {
+    width: 6px;
+    height: 6px;
+  }
+}

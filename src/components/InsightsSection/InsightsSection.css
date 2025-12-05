@@ -1,0 +1,119 @@
+.insights-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.insights-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 3rem 0;
+  display: inline-block;
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.insight-card {
+  background: #20b2aa;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.insight-image {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+}
+
+.insight-content {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.insight-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.4;
+}
+
+.insight-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  background: #2d8659;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: fit-content;
+}
+
+.insight-btn:hover {
+  background: #246a48;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(45, 134, 89, 0.3);
+}
+
+.insight-btn svg {
+  flex-shrink: 0;
+}
+
+:global(.swiper-button-next),
+:global(.swiper-button-prev) {
+  color: #2d8659 !important;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: #2d8659 !important;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .insights-section {
+    padding: 4rem 0;
+  }
+
+  .insights-title {
+    font-size: 2rem;
+    padding: 0.75rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .insight-content {
+    padding: 1.5rem;
+  }
+
+  .insight-title {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .insight-image {
+    font-size: 3rem;
+  }
+
+  :global(.swiper-button-next),
+  :global(.swiper-button-prev) {
+    display: none !important;
+  }
+}

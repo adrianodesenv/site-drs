@@ -1,0 +1,154 @@
+.solutions-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.solutions-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.solutions-left {
+  display: flex;
+  align-items: center;
+}
+
+.solutions-content {
+  background: #ff6b35;
+  padding: 4rem;
+  border-radius: 24px;
+  color: white;
+  width: 100%;
+}
+
+.solutions-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem 0;
+  line-height: 1.2;
+  color: white;
+}
+
+.solutions-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0 0 2.5rem 0;
+  opacity: 0.95;
+  color: white;
+}
+
+.solutions-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  background: #2d8659;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.solutions-cta:hover {
+  background: #246a48;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(45, 134, 89, 0.3);
+}
+
+.solutions-cta svg {
+  flex-shrink: 0;
+}
+
+.solutions-right {
+  display: flex;
+  align-items: center;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.service-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: #2d8659;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.service-btn:hover {
+  background: #246a48;
+  transform: translateX(5px);
+}
+
+.service-btn svg {
+  flex-shrink: 0;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .solutions-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .solutions-content {
+    padding: 3rem;
+  }
+
+  .solutions-title {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .solutions-section {
+    padding: 4rem 0;
+  }
+
+  .solutions-container {
+    padding: 0 1rem;
+    gap: 2rem;
+  }
+
+  .solutions-content {
+    padding: 2rem;
+  }
+
+  .solutions-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .solutions-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .service-btn {
+    padding: 1.25rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}
