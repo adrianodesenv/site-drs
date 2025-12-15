@@ -44,19 +44,19 @@ export const translations: Translations = {
 
   // Hero Section
   "hero.title": {
-    pt: "Levamos a ciência às pessoas",
+    pt: "Levamos à ciência as pessoas",
     en: "We bring science to people",
     es: "Llevamos la ciencia a las personas",
   },
   "hero.description": {
-    pt: "Inovação e tecnologia em pesquisa clínica para transformar vidas através de soluções de saúde de excelência.",
-    en: "Innovation and technology in clinical research to transform lives through excellence in health solutions.",
-    es: "Innovación y tecnología en investigación clínica para transformar vidas a través de soluciones de salud de excelencia.",
+    pt: "Conectamos ciência e pessoas. Transformamos inovação e tecnologia em soluções que aceleram a pesquisa clínica e levam os avanços científicos à vida dos pacientes com precisão, cuidado e menos impacto ambiental.",
+    en: "We connect science and people. We transform innovation and technology into solutions that accelerate clinical research and bring scientific advancements to patients with precision, care, and less environmental impact.",
+    es: "Conectamos ciencia y personas. Transformamos innovación y tecnología en soluciones que aceleran la investigación clínica y llevan los avances científicos a la vida de los pacientes con precisión, cuidado y menos impacto ambiental.",
   },
   "hero.cta": {
-    pt: "PARA MAIS",
-    en: "FOR MORE",
-    es: "PARA MÁS",
+    pt: "SAIBA MAIS",
+    en: "LEARN MORE",
+    es: "SABER MÁS",
   },
 
   // Results Section
@@ -71,9 +71,9 @@ export const translations: Translations = {
     es: "+500 protocolos bajo gestión",
   },
   "results.protocols.desc": {
-    pt: "Gestão completa de protocolos de pesquisa clínica com tecnologia de ponta.",
-    en: "Complete management of clinical research protocols with cutting-edge technology.",
-    es: "Gestión completa de protocolos de investigación clínica con tecnología de vanguardia.",
+    pt: "Atuação em diferentes fases clínicas e terapias.",
+    en: "Acting in different clinical phases and therapies.",
+    es: "Actuación en diferentes fases clínicas y terapias.",
   },
   "results.clients": {
     pt: "+100 clientes ativos",
@@ -81,9 +81,9 @@ export const translations: Translations = {
     es: "+100 clientes activos",
   },
   "results.clients.desc": {
-    pt: "Parcerias estratégicas com empresas líderes no setor de saúde.",
-    en: "Strategic partnerships with leading companies in the health sector.",
-    es: "Alianzas estratégicas con empresas líderes en el sector de la salud.",
+    pt: "Biofarmacêuticas, CRO's, Centros de Pesquisa, Fornecedores e Logística.",
+    en: "Biopharmaceuticals, CROs, Research Centers, Suppliers and Logistics.",
+    es: "Biofarmacéuticas, CROs, Centros de Investigación, Proveedores y Logística.",
   },
   "results.patients": {
     pt: "+200.000 pacientes atendidos por ano",
@@ -91,9 +91,9 @@ export const translations: Translations = {
     es: "+200.000 pacientes atendidos por año",
   },
   "results.patients.desc": {
-    pt: "Compromisso com a excelência no atendimento e cuidado aos pacientes.",
-    en: "Commitment to excellence in patient care and service.",
-    es: "Compromiso con la excelencia en la atención y cuidado de los pacientes.",
+    pt: "Fazemos a diferença, seja conectando a pesquisa clínica ou viabilizando os tratamentos.",
+    en: "We make a difference, whether by connecting clinical research or enabling treatments.",
+    es: "Hacemos la diferencia, ya sea conectando la investigación clínica o habilitando los tratamientos.",
   },
 
   // DRS360 Section
@@ -103,9 +103,9 @@ export const translations: Translations = {
     es: "DRS360: Visibilidad 24/7 en tiempo real",
   },
   "drs360.description": {
-    pt: "Plataforma integrada que oferece visibilidade completa e em tempo real de todos os processos e operações.",
-    en: "Integrated platform that offers complete and real-time visibility of all processes and operations.",
-    es: "Plataforma integrada que ofrece visibilidad completa y en tiempo real de todos los procesos y operaciones.",
+    pt: "Plataforma proprietária com rastreabilidade e dashboards por estudo.",
+    en: "Proprietary platform with traceability and dashboards per study.",
+    es: "Plataforma propietaria con trazabilidad y dashboards por estudio.",
   },
 
   // Solutions Section
@@ -115,9 +115,9 @@ export const translations: Translations = {
     es: "Soluciones inteligentes para cada eslabón de la cadena de salud",
   },
   "solutions.description": {
-    pt: "Oferecemos soluções completas e integradas para todos os aspectos da pesquisa clínica e gestão de saúde.",
-    en: "We offer complete and integrated solutions for all aspects of clinical research and health management.",
-    es: "Ofrecemos soluciones completas e integradas para todos los aspectos de la investigación clínica y gestión de salud.",
+    pt: "Combinamos inovação, tecnologia e cuidado para apoiar projetos críticos de saúde. Atuamos em três áreas complementares conectadas pela nossa plataforma proprietária DRS 360, para viabilizar estudos clínicos e garantir tratamentos.",
+    en: "We combine innovation, technology and care to support critical health projects. We operate in three complementary areas connected by our proprietary DRS 360 platform, to enable clinical studies and guarantee treatments.",
+    es: "Combinamos innovación, tecnología y cuidado para apoyar proyectos críticos de salud. Operamos en tres áreas complementarias conectadas por nuestra plataforma propietaria DRS 360, para habilitar estudios clínicos y garantizar tratamientos.",
   },
   "solutions.cta": {
     pt: "SAIBA MAIS",

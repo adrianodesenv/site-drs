@@ -8,13 +8,18 @@ const Hero = () => {
     <section id="home" className="hero">
       <div className="hero-container">
         <div className="hero-left">
-          <div className="hero-image-placeholder">
-            <div className="module-sign">
-              <div className="module-sign-content">
-                <span className="module-text">MODULO 40</span>
-                <div className="module-logo">DRS</div>
-              </div>
-            </div>
+          <div className="hero-video-container">
+            <video
+              className="hero-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+              poster=""
+            >
+              <source src="/video/WhatsApp Video 2025-11-14 at 14.25.47.mp4" type="video/mp4" />
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
           </div>
         </div>
         <div className="hero-right">
@@ -32,7 +37,7 @@ const Hero = () => {
               >
                 <path
                   d="M6 12L10 8L6 4"
-                  stroke="white"
+                  stroke="currentColor"
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
