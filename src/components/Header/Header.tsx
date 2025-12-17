@@ -34,16 +34,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <a href="#home" className="logo" onClick={handleLogoClick}>
-          <div className="logo-blocks">
-            <div className="logo-block block-1"></div>
-            <div className="logo-block block-2"></div>
-            <div className="logo-block block-3"></div>
-            <div className="logo-block block-4"></div>
-          </div>
-          <div className="logo-text">
-            <span className="logo-group">group</span>
-            <span className="logo-drs">DRS</span>
-          </div>
+          <img src="/logo.png" alt="group DRS" className="logo-image" />
         </a>
 
         <nav className={`nav ${isMenuOpen ? "nav-open" : ""}`}>
