@@ -1,76 +1,151 @@
 .planning-section {
   padding: 6rem 0;
-  background: #f8f9fa;
+  background: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.planning-header {
+  margin-bottom: 4rem;
+}
+
+.drs360-tag {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: #99b2a9;
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .planning-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #1a1a1a;
-  text-align: center;
-  margin: 0 0 4rem 0;
+  text-align: left;
+  margin: 0;
   line-height: 1.3;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 900px;
 }
 
-.planning-center {
+.planning-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+/* Left Side - Irregular Content Block */
+.planning-left {
+  position: relative;
+}
+
+.planning-content-block {
+  width: 528.36px;
+  height: 522.96px;
+  background: white;
+  position: relative;
+  mask-image: url("/planning-mask-fill.svg");
+  -webkit-mask-image: url("/planning-mask-fill.svg");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  overflow: hidden;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  margin-bottom: 3rem;
+  padding: 3rem;
+}
+
+.planning-content-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/planning-mask.svg") no-repeat center;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .drs360-logo {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
+  z-index: 2;
 }
 
 .logo-circle {
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #20b2aa;
+  border: 2px solid #16493c;
 }
 
 .circle-1 {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   opacity: 0.3;
 }
 
 .circle-2 {
-  width: 200px;
-  height: 200px;
-  top: 50px;
-  left: 50px;
+  width: 140px;
+  height: 140px;
+  top: 30px;
+  left: 30px;
   opacity: 0.5;
 }
 
 .circle-3 {
-  width: 100px;
-  height: 100px;
-  top: 100px;
-  left: 100px;
+  width: 80px;
+  height: 80px;
+  top: 60px;
+  left: 60px;
   opacity: 0.7;
-  background: #20b2aa;
+  background: #16493c;
+  border: none;
 }
 
 .logo-text-center {
   position: relative;
   z-index: 10;
-  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.logo-drs {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #16493c;
+}
+
+.logo-360 {
+  font-size: 2.5rem;
   font-weight: 700;
-  color: #2d8659;
+  color: #16493c;
 }
 
 .planning-actions {
   display: flex;
   justify-content: center;
-  margin-bottom: 4rem;
+  z-index: 2;
+  position: relative;
 }
 
 .planning-cta {
@@ -80,7 +155,7 @@
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 700;
-  background: #2d8659;
+  background: #274b41;
   color: white;
   border: none;
   border-radius: 8px;
@@ -91,19 +166,50 @@
 }
 
 .planning-cta:hover {
-  background: #246a48;
+  background: #1e3a32;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(45, 134, 89, 0.3);
+  box-shadow: 0 6px 20px rgba(39, 75, 65, 0.3);
 }
 
 .planning-cta svg {
   flex-shrink: 0;
 }
 
-.planning-images {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.planning-decorative-orange {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.decor-square {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+}
+
+.square-orange {
+  background: #f39325;
+}
+
+.square-green {
+  background: #274b41;
+}
+
+/* Right Side */
+.planning-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  padding-top: 2rem;
+}
+
+.planning-decorative-green {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 2;
 }
 
 .planning-image {
@@ -126,22 +232,51 @@
   background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
 }
 
-.image-placeholder.lab {
-  background: linear-gradient(135deg, #bbdefb 0%, #90caf9 100%);
+.planning-smartphones {
+  display: flex;
+  gap: 0.8rem;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 1rem;
 }
 
-.image-placeholder.data {
-  background: linear-gradient(135deg, #ffe0b2 0%, #ffcc80 100%);
+.smartphone-mockup {
+  width: 120px;
+  height: 200px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.smartphone-mockup:nth-child(2) {
+  transform: translateY(-15px);
+}
+
+.smartphone-mockup:nth-child(3) {
+  transform: translateY(-30px);
 }
 
 /* Tablet Styles */
 @media (max-width: 1024px) {
-  .planning-title {
-    font-size: 2rem;
+  .planning-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
   }
 
-  .planning-images {
-    grid-template-columns: repeat(2, 1fr);
+  .planning-content-block {
+    width: 100%;
+    max-width: 528.36px;
+    height: auto;
+    aspect-ratio: 529 / 523;
+    margin: 0 auto;
+  }
+
+  .planning-title {
+    font-size: 2rem;
   }
 }
 
@@ -153,43 +288,50 @@
 
   .planning-title {
     font-size: 1.75rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .planning-content-block {
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem;
   }
 
   .drs360-logo {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
 
   .circle-1 {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
   }
 
   .circle-2 {
-    width: 170px;
-    height: 170px;
-    top: 40px;
-    left: 40px;
+    width: 100px;
+    height: 100px;
+    top: 25px;
+    left: 25px;
   }
 
   .circle-3 {
+    width: 60px;
+    height: 60px;
+    top: 45px;
+    left: 45px;
+  }
+
+  .logo-drs {
+    font-size: 1rem;
+  }
+
+  .logo-360 {
+    font-size: 2rem;
+  }
+
+  .smartphone-mockup {
     width: 80px;
-    height: 80px;
-    top: 85px;
-    left: 85px;
-  }
-
-  .logo-text-center {
-    font-size: 1.5rem;
-  }
-
-  .planning-images {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .image-placeholder {
-    font-size: 3rem;
+    height: 140px;
+    font-size: 2rem;
   }
 }

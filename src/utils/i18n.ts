@@ -61,9 +61,14 @@ export const translations: Translations = {
 
   // Results Section
   "results.title": {
-    pt: "Resultados que importam. Soluções que transformam.",
-    en: "Results that matter. Solutions that transform.",
-    es: "Resultados que importan. Soluciones que transforman.",
+    pt: "Resultados que importam.",
+    en: "Results that matter.",
+    es: "Resultados que importan.",
+  },
+  "results.title2": {
+    pt: "Soluções que transformam.",
+    en: "Solutions that transform.",
+    es: "Soluciones que transforman.",
   },
   "results.protocols": {
     pt: "+500 protocolos sob gestão",
@@ -98,9 +103,9 @@ export const translations: Translations = {
 
   // DRS360 Section
   "drs360.title": {
-    pt: "DRS360: Visibilidade 24/7 em tempo real",
-    en: "DRS360: 24/7 Real-time Visibility",
-    es: "DRS360: Visibilidad 24/7 en tiempo real",
+    pt: "DRS360:\nVisibilidade 24/7\nem tempo real",
+    en: "DRS360:\n24/7 Real-time\nVisibility",
+    es: "DRS360:\nVisibilidad 24/7\nen tiempo real",
   },
   "drs360.description": {
     pt: "Plataforma proprietária com rastreabilidade e dashboards por estudo.",

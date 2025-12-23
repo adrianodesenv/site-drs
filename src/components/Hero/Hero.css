@@ -14,7 +14,7 @@
   padding: 0 2rem;
   display: flex;
   gap: 0;
-  align-items: flex-start;
+  align-items: stretch;
   align-content: flex-start;
   width: 100%;
   position: relative;
@@ -30,9 +30,11 @@
   height: 532px;
   min-height: 532px;
   max-height: 532px;
-  flex-shrink: 0;
+  flex-shrink: 1;
+  flex-basis: 718.8px;
   position: relative;
   z-index: 11;
+  align-self: stretch;
 }
 
 .hero-video-container {
@@ -95,18 +97,18 @@
   display: flex;
   align-items: center;
   flex: 1;
+  width: 531.92px;
   height: 532px !important;
   min-height: 532px !important;
   max-height: 532px !important;
   position: relative;
-  min-width: 0;
   margin-left: -70px;
   z-index: 2;
   background-color: #69c0ac;
   mask-image: url("/vector-verde-mask.svg");
   -webkit-mask-image: url("/vector-verde-mask.svg");
-  mask-size: 100% 532px !important;
-  -webkit-mask-size: 100% 532px !important;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
   mask-repeat: no-repeat;
   -webkit-mask-repeat: no-repeat;
   mask-position: left center;
@@ -114,7 +116,7 @@
   mask-mode: alpha;
   -webkit-mask-mode: alpha;
   overflow: hidden;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .hero-content {
@@ -174,6 +176,40 @@
 @media (max-width: 1808px) {
   .hero-container {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  .hero-container {
+    height: auto;
+    align-items: stretch;
+  }
+
+  .hero-left {
+    width: 100%;
+    max-width: 718.8px;
+    height: auto;
+    min-height: auto;
+    max-height: none;
+    aspect-ratio: 719 / 532;
+    flex-shrink: 0;
+  }
+
+  .hero-video-container {
+    aspect-ratio: 719 / 532;
+    height: 100%;
+  }
+
+  .hero-right {
+    width: auto;
+    flex: 1;
+    max-width: 100%;
+    align-self: stretch;
+    height: 100%;
+  }
+
+  .hero-content {
+    height: 100%;
   }
 }
 

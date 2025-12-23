@@ -16,30 +16,42 @@
 .solutions-left {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .solutions-content {
-  background: #ff6b35;
+  background: #f39325;
   padding: 4rem;
-  border-radius: 24px;
-  color: white;
+  color: #1a1a1a;
   width: 100%;
+  position: relative;
+  min-height: 564px;
+  mask-image: url("/solutions-mask.svg");
+  -webkit-mask-image: url("/solutions-mask.svg");
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-mode: alpha;
+  -webkit-mask-mode: alpha;
+  overflow: hidden;
 }
 
 .solutions-title {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
-  margin: 0 0 1.5rem 0;
-  line-height: 1.2;
-  color: white;
+  margin: 0 0 1.2rem 0;
+  line-height: 1.3;
+  color: #1a1a1a;
 }
 
 .solutions-description {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin: 0 0 2.5rem 0;
-  opacity: 0.95;
-  color: white;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 2rem 0;
+  color: #1a1a1a;
 }
 
 .solutions-cta {
@@ -49,7 +61,7 @@
   padding: 1rem 2rem;
   font-size: 1rem;
   font-weight: 700;
-  background: #2d8659;
+  background: #274b41;
   color: white;
   border: none;
   border-radius: 8px;
@@ -60,9 +72,9 @@
 }
 
 .solutions-cta:hover {
-  background: #246a48;
+  background: #1e3a32;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(45, 134, 89, 0.3);
+  box-shadow: 0 6px 20px rgba(39, 75, 65, 0.3);
 }
 
 .solutions-cta svg {
@@ -86,7 +98,7 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem 2rem;
-  background: #2d8659;
+  background: #274b41;
   color: white;
   border: none;
   border-radius: 12px;
@@ -98,7 +110,7 @@
 }
 
 .service-btn:hover {
-  background: #246a48;
+  background: #1e3a32;
   transform: translateX(5px);
 }
 
@@ -115,10 +127,16 @@
 
   .solutions-content {
     padding: 3rem;
+    min-height: auto;
+    aspect-ratio: 847 / 564;
   }
 
   .solutions-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .solutions-description {
+    font-size: 0.9rem;
   }
 }
 
@@ -135,15 +153,17 @@
 
   .solutions-content {
     padding: 2rem;
+    min-height: auto;
+    aspect-ratio: 847 / 564;
   }
 
   .solutions-title {
-    font-size: 1.75rem;
+    font-size: 1.4rem;
     margin-bottom: 1rem;
   }
 
   .solutions-description {
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-bottom: 2rem;
   }
 
