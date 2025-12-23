@@ -24,12 +24,6 @@ const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const languages: { code: Language; label: string }[] = [
-    { code: "pt", label: "PT" },
-    { code: "en", label: "EN" },
-    { code: "es", label: "ES" },
-  ];
-
   return (
     <header className="header">
       <div className="header-container">
