@@ -180,7 +180,7 @@
 }
 
 .footer-contact-item a {
-  color: rgba(255, 255, 255, 0.9);
+  color: #69c0ac;
   text-decoration: underline;
   transition: color 0.3s ease;
 }
@@ -225,7 +225,7 @@
 
 .footer-copyright p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.7);
+  color: #69c0ac;
   font-size: 0.9rem;
 }
 

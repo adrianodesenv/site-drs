@@ -115,6 +115,17 @@ const Footer = () => {
                     </defs>
                   </svg>
                 </div>
+                <ul className="footer-links">
+                  <li>
+                    <a href="#privacy">{t("footer.privacy")}</a>
+                  </li>
+                  <li>
+                    <a href="#terms">{t("footer.terms")}</a>
+                  </li>
+                  <li>
+                    <a href="#cookies">{t("footer.cookies")}</a>
+                  </li>
+                </ul>
               </div>
               <div className="footer-column">
                 <h3 className="footer-column-title">{t("footer.contact")}</h3>
@@ -184,7 +195,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-copyright">
-              <p>© 2025 DRS Group - {t("footer.rights")}</p>
+              <p>© 2026 DRS Group - {t("footer.rights")}</p>
             </div>
           </div>
         </div>

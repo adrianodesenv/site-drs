@@ -193,9 +193,9 @@ export const translations: Translations = {
     es: "Direcciones",
   },
   "footer.privacy": {
-    pt: "Aviso de Privacidade",
-    en: "Privacy Notice",
-    es: "Aviso de Privacidad",
+    pt: "Política de Privacidade",
+    en: "Privacy Policy",
+    es: "Política de Privacidad",
   },
   "footer.terms": {
     pt: "Termos de Uso",
