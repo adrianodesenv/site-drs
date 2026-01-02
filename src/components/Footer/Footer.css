@@ -11,11 +11,19 @@
   background: #2f4f4f;
   clip-path: url(#footer-mask);
   -webkit-clip-path: url(#footer-mask);
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .footer-top {
   background: transparent;
   padding: 12rem 0 0;
+}
+
+.footer .container {
+  max-width: 800px;
+  padding: 0;
 }
 
 .footer-cta-section {
@@ -30,11 +38,13 @@
   margin: 0 0 2rem 0;
   color: white;
   line-height: 1.2;
+  text-align: left;
 }
 
 .footer-cta-btn {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
   font-size: 1rem;
@@ -45,7 +55,7 @@
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 auto;
+  width: fit-content;
 }
 
 .footer-cta-btn:hover {
@@ -72,9 +82,9 @@
 
 .footer-column-title {
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 400;
   margin: 0 0 1.5rem 0;
-  color: white;
+  color: #000;
   background: #f39325;
   padding: 0.5rem 1rem;
   border-radius: 8px;
@@ -95,66 +105,13 @@
 .footer-logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   margin-bottom: 2rem;
 }
 
-.footer-logo-blocks {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 2px;
-  width: 40px;
-  height: 40px;
-}
-
-.footer-logo-block {
-  border-radius: 2px;
-}
-
-.footer-logo-block.block-1 {
-  background: #20b2aa;
-  grid-column: 1;
-  grid-row: 1;
-}
-
-.footer-logo-block.block-2 {
-  background: white;
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.footer-logo-block.block-3 {
-  background: white;
-  grid-column: 1;
-  grid-row: 2;
-}
-
-.footer-logo-block.block-4 {
-  background: #20b2aa;
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.footer-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.footer-logo-group {
-  font-size: 0.65rem;
-  font-weight: 400;
-  color: white;
-  text-transform: lowercase;
-  letter-spacing: 0.5px;
-}
-
-.footer-logo-drs {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: -0.5px;
+.footer-logo svg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 .footer-links {
