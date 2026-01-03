@@ -111,8 +111,8 @@
   gap: 0.75rem;
   padding: 0.75rem 1.5rem;
   font-size: 0.9rem;
-  font-weight: 700;
-  background: #4a4a4a;
+  font-weight: 400;
+  background: #274b41;
   color: white;
   border: none;
   border-radius: 8px;
@@ -131,6 +131,13 @@
 
 .insight-btn svg {
   flex-shrink: 0;
+}
+
+.insight-navigation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .insights-navigation {
