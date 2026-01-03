@@ -13,45 +13,50 @@ const InsightsSection = () => {
     {
       id: 1,
       title:
-        "Sai Patria, entra Vinci: após rearranjo societário, DRS avança exterior",
-      image: "🧪",
+        "Sai Pátria, entra Vinci: após rearranjo societário, DRS avança no exterior",
+      image: "/artigo2.png",
     },
     {
       id: 2,
       title:
         "DRS implementa nova tecnologia de rastreabilidade em operações globais",
-      image: "📦",
+      image: "/mask-group-insights.png",
     },
     {
       id: 3,
       title: "Expansão da rede DRS360 para novos mercados internacionais",
-      image: "🌍",
+      image: "/artigo2.png",
     },
   ];
 
   return (
     <section className="insights-section">
-      <div className="container">
-        <h2 className="insights-title">{t("insights.title")}</h2>
+      <div className="insights-title-wrapper">
+        <div className="insights-vector-bg">
+          <img src="/insights-vector.svg" alt="" aria-hidden="true" />
+          <h2 className="insights-title">{t("insights.title")}</h2>
+        </div>
+      </div>
+      <div className="container insights-carousel-wrapper">
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}
-          slidesPerView={2}
-          navigation
-          pagination={{ clickable: true }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            768: {
-              slidesPerView: 2,
-            },
+          slidesPerView={1}
+          navigation={{
+            nextEl: ".swiper-button-next-custom",
+            prevEl: ".swiper-button-prev-custom",
+          }}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination-custom",
           }}
         >
           {insights.map((insight) => (
             <SwiperSlide key={insight.id}>
               <div className="insight-card">
-                <div className="insight-image">{insight.image}</div>
+                <div className="insight-image">
+                  <img src={insight.image} alt={insight.title} />
+                </div>
                 <div className="insight-content">
                   <h3 className="insight-title">{insight.title}</h3>
                   <button className="insight-btn">
@@ -77,6 +82,15 @@ const InsightsSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+        <div className="insights-navigation">
+          <button className="swiper-button-prev-custom">
+            <img src="/arrow-icon.svg" alt="Previous" />
+          </button>
+          <div className="swiper-pagination-custom"></div>
+          <button className="swiper-button-next-custom">
+            <img src="/arrow-icon.svg" alt="Next" className="arrow-right" />
+          </button>
+        </div>
       </div>
     </section>
   );
