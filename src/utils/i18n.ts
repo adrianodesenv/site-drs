@@ -130,19 +130,19 @@ export const translations: Translations = {
     es: "SABER MÁS",
   },
   "solutions.clinical": {
-    pt: "Clinical Trial Services",
-    en: "Clinical Trial Services",
-    es: "Servicios de Ensayos Clínicos",
+    pt: "Clinical Trial Services - CTS",
+    en: "Clinical Trial Services - CTS",
+    es: "Servicios de Ensayos Clínicos - CTS",
   },
   "solutions.patient": {
-    pt: "Patient Centric Services",
-    en: "Patient Centric Services",
-    es: "Servicios Centrados en el Paciente",
+    pt: "Patient Centric Services - PCS",
+    en: "Patient Centric Services - PCS",
+    es: "Servicios Centrados en el Paciente - PCS",
   },
   "solutions.thermo": {
-    pt: "Thermo Integrated Services",
-    en: "Thermo Integrated Services",
-    es: "Servicios Integrados de Termo",
+    pt: "Thermo Integrated Services - TIS",
+    en: "Thermo Integrated Services - TIS",
+    es: "Servicios Integrados de Termo - TIS",
   },
 
   // Planning Section

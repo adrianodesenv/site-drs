@@ -11,7 +11,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  max-width: 1250px;
+  max-width: 1400px;
   height: 100%;
   z-index: 0;
 }
@@ -19,7 +19,7 @@
 .insights-section .container {
   position: relative;
   z-index: 1;
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
   margin-top: 100px;
@@ -27,7 +27,8 @@
 
 .insights-title-wrapper {
   position: absolute;
-  left: 575px;
+  left: 20%;
+  top: -130px;
 }
 
 .insights-vector-bg {

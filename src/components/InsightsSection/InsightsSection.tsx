@@ -31,13 +31,13 @@ const InsightsSection = () => {
 
   return (
     <section className="insights-section">
-      <div className="insights-title-wrapper">
-        <div className="insights-vector-bg">
-          <img src="/insights-vector.svg" alt="" aria-hidden="true" />
-          <h2 className="insights-title">{t("insights.title")}</h2>
-        </div>
-      </div>
       <div className="container insights-carousel-wrapper">
+        <div className="insights-title-wrapper">
+          <div className="insights-vector-bg">
+            <img src="/insights-vector.svg" alt="" aria-hidden="true" />
+            <h2 className="insights-title">{t("insights.title")}</h2>
+          </div>
+        </div>
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}

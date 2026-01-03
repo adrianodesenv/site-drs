@@ -11,7 +11,7 @@
   background: #2f4f4f;
   clip-path: url(#footer-mask);
   -webkit-clip-path: url(#footer-mask);
-  max-width: 1250px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 2rem;
 }
