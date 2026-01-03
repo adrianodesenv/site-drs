@@ -16,7 +16,7 @@
 .drs360-tag {
   display: inline-block;
   padding: 0.4rem 1rem;
-  background: #99b2a9;
+  background: #69c0ac;
   color: white;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -26,8 +26,8 @@
 
 .planning-title {
   font-size: 2.2rem;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: 900;
+  color: #274b41;
   text-align: left;
   margin: 0;
   line-height: 1.3;
@@ -38,7 +38,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* Left Side - Irregular Content Block */
@@ -90,62 +90,17 @@
   z-index: 2;
 }
 
-.logo-circle {
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #16493c;
-}
-
-.circle-1 {
-  width: 200px;
-  height: 200px;
-  opacity: 0.3;
-}
-
-.circle-2 {
-  width: 140px;
-  height: 140px;
-  top: 30px;
-  left: 30px;
-  opacity: 0.5;
-}
-
-.circle-3 {
-  width: 80px;
-  height: 80px;
-  top: 60px;
-  left: 60px;
-  opacity: 0.7;
-  background: #16493c;
-  border: none;
-}
-
-.logo-text-center {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.2rem;
-}
-
-.logo-drs {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #16493c;
-}
-
-.logo-360 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #16493c;
+.drs360-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .planning-actions {
   display: flex;
-  justify-content: center;
   z-index: 2;
   position: relative;
+  top: -80px;
 }
 
 .planning-cta {
@@ -154,7 +109,7 @@
   gap: 0.75rem;
   padding: 1rem 2rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   background: #274b41;
   color: white;
   border: none;
@@ -177,14 +132,22 @@
 
 .planning-decorative-orange {
   position: absolute;
-  bottom: 20px;
+  top: 270px;
   right: 20px;
   z-index: 3;
 }
+.planning-mobile-app {
+  position: absolute;
+  top: 350px;
+  right: 20px;
+  z-index: 3;
+  border: #000000 1px solid;
+  border-radius: 50px;
+}
 
 .decor-square {
-  width: 24px;
-  height: 24px;
+  width: 44px;
+  height: 44px;
   border-radius: 4px;
 }
 
@@ -199,37 +162,32 @@
 /* Right Side */
 .planning-right {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
   position: relative;
-  padding-top: 2rem;
+  align-items: center;
 }
 
 .planning-decorative-green {
   position: absolute;
-  top: -10px;
-  right: -10px;
   z-index: 2;
+  left: -100px;
+  top: 0;
 }
 
 .planning-image {
   width: 100%;
-}
-
-.image-placeholder {
-  width: 100%;
+  max-width: 222px;
+  max-height: 222px;
   aspect-ratio: 4/3;
-  background: #e0e0e0;
   border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 4rem;
   overflow: hidden;
+  margin-top: -49px;
 }
 
-.image-placeholder.warehouse {
-  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+.warehouse-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
 }
 
 .planning-smartphones {
@@ -300,33 +258,6 @@
   .drs360-logo {
     width: 150px;
     height: 150px;
-  }
-
-  .circle-1 {
-    width: 150px;
-    height: 150px;
-  }
-
-  .circle-2 {
-    width: 100px;
-    height: 100px;
-    top: 25px;
-    left: 25px;
-  }
-
-  .circle-3 {
-    width: 60px;
-    height: 60px;
-    top: 45px;
-    left: 45px;
-  }
-
-  .logo-drs {
-    font-size: 1rem;
-  }
-
-  .logo-360 {
-    font-size: 2rem;
   }
 
   .smartphone-mockup {

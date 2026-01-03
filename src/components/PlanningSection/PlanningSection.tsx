@@ -15,37 +15,32 @@ const PlanningSection = () => {
           <div className="planning-left">
             <div className="planning-content-block">
               <div className="drs360-logo">
-                <div className="logo-circle circle-1"></div>
-                <div className="logo-circle circle-2"></div>
-                <div className="logo-circle circle-3"></div>
-                <div className="logo-text-center">
-                  <span className="logo-drs">DRS</span>
-                  <span className="logo-360">360</span>
-                </div>
+                <img src="/drs360-logo.svg" alt="DRS 360 Logo" />
               </div>
-              <div className="planning-actions">
-                <button className="planning-cta">
-                  {t("planning.cta")}
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M6 12L10 8L6 4"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+
               <div className="planning-decorative-orange">
                 <div className="decor-square square-orange"></div>
               </div>
+            </div>
+            <div className="planning-actions">
+              <button className="planning-cta">
+                <svg
+                  width="20"
+                  height="14"
+                  viewBox="0 0 20 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.1116 0.305374L19.6449 5.79172L19.6911 5.83465C19.8763 6.01824 19.984 6.26036 20 6.54643L19.9991 6.6426C19.9856 6.8692 19.899 7.08569 19.7284 7.27968L19.6638 7.34633L14.1116 12.8525C13.701 13.2597 13.0371 13.2597 12.6265 12.8525C12.2135 12.4429 12.2135 11.777 12.6265 11.3674L16.4601 7.56522L1.05235 7.56559C0.472139 7.56559 0 7.09741 0 6.51765C0 5.93789 0.472144 5.4697 1.05234 5.4697L16.3364 5.46932L12.6265 1.79052C12.2135 1.38092 12.2135 0.714975 12.6265 0.305374C13.0371 -0.101791 13.701 -0.101791 14.1116 0.305374Z"
+                    fill="white"
+                  />
+                </svg>
+                {t("planning.cta")}
+              </button>
+            </div>
+            <div className="planning-mobile-app">
+              <img src="/planning-mask-group.svg" alt="Planning Mobile App" />
             </div>
           </div>
           <div className="planning-right">
@@ -53,12 +48,11 @@ const PlanningSection = () => {
               <div className="decor-square square-green"></div>
             </div>
             <div className="planning-image warehouse">
-              <div className="image-placeholder warehouse">📦</div>
-            </div>
-            <div className="planning-smartphones">
-              <div className="smartphone-mockup">📱</div>
-              <div className="smartphone-mockup">📱</div>
-              <div className="smartphone-mockup">📱</div>
+              <img
+                src="/warehouse-image.svg"
+                alt="Warehouse"
+                className="warehouse-image"
+              />
             </div>
           </div>
         </div>
